@@ -125,7 +125,7 @@ else:
         if access_code == "ShwetaXSatwik":  # Secret Code
             st.session_state.chat_mode = True
         else:
-            st.error("Here is web link: https://chat.openai.com/")
+            st.error("Correct code! Here is web link: https://bloggers.streamlit.app/")
     
     if st.session_state.chat_mode:
         handle_chat()
