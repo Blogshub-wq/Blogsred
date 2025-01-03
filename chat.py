@@ -119,7 +119,7 @@ if not st.session_state.logged_in:
                 st.error("Invalid credentials.")
 else:
     st.title(f"Welcome, {st.session_state.current_user}!")
-    access_code = st.text_input("Enter Invitation Code:")
+    access_code = st.text_input("Enter Invitation Code:", type="password")
     
     if st.button("Submit Code"):
         if access_code == "ShwetaXSatwik":  # Secret Code
